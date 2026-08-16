@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charlotte D'Souza, Brand &amp; Media Marketing, EMEA</title>
+<meta name="description" content="Brand media strategist in Berlin. Ten years moving Top-of-Mind and brand health for consumer marketplaces across Europe, the Nordics, CEE and MENA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F1EC;
+  --paper-2:#E9E7E0;
+  --ink:#14181C;
+  --ink-soft:#5D636B;
+  --rule:#D5D2C8;
+  --bar-yellow:#C99B2E;
+  --bar-cyan:#2F8794;
+  --bar-green:#4A7F55;
+  --bar-magenta:#9C3F73;
+  --bar-red:#B44038;
+  --bar-blue:#33549B;
+
+  --display:'Bricolage Grotesque',Georgia,serif;
+  --body:'Inter',system-ui,-apple-system,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+
+  --max:1080px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#14161A; --paper-2:#1C1F24; --ink:#EDEBE5; --ink-soft:#9AA0A8; --rule:#2C3037;
+    --bar-yellow:#E0B750; --bar-cyan:#48A8B6; --bar-green:#5FA36D;
+    --bar-magenta:#C25D95; --bar-red:#D4594F; --bar-blue:#5B7FC7;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--bar-magenta);outline-offset:3px}
+
+.eyebrow{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-soft);margin:0 0 14px;
+}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0}
+h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:8px}
+h3{font-size:19px;font-weight:600;letter-spacing:-.01em}
+p{margin:0 0 14px}
+.lede{font-size:clamp(17px,1.9vw,20px);line-height:1.5;color:var(--ink)}
+.muted{color:var(--ink-soft)}
+.small{font-size:14px}
+
+.bars{display:flex;height:6px;width:100%}
+.bars span{flex:1}
+.b1{background:var(--bar-yellow)}.b2{background:var(--bar-cyan)}.b3{background:var(--bar-green)}
+.b4{background:var(--bar-magenta)}.b5{background:var(--bar-red)}.b6{background:var(--bar-blue)}
+
+header.hero{padding:0 0 56px}
+.hero-inner{padding-top:56px}
+.hero h1{font-size:clamp(38px,7vw,78px);max-width:16ch}
+.hero .thesis{max-width:52ch;margin-top:22px;font-size:clamp(17px,2vw,21px);line-height:1.45}
+.meta-row{
+  display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)
+}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.links a{
+  text-decoration:none;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--ink);padding:9px 15px;transition:background .18s,color .18s
+}
+.links a:hover{background:var(--ink);color:var(--paper)}
+
+.tracker{
+  margin-top:48px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding:26px 0;display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:34px;align-items:center
+}
+.tracker svg{width:100%;height:132px;display:block;overflow:visible}
+.tracker .line{
+  fill:none;stroke:var(--bar-magenta);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1.9s .3s ease-out forwards
+}
+.tracker .ghost{fill:none;stroke:var(--rule);stroke-width:1.5}
+.tracker .dot{fill:var(--bar-magenta);opacity:0;animation:pop .5s 2s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{opacity:1}}
+.tracker figcaption{font-size:14px;line-height:1.5;color:var(--ink-soft)}
+.tracker figcaption strong{color:var(--ink);font-family:var(--display);font-size:17px;display:block;margin-bottom:6px}
+@media (max-width:760px){.tracker{grid-template-columns:1fr;gap:18px}}
+
+section{padding:64px 0;border-top:1px solid var(--rule)}
+.sec-head{max-width:62ch;margin-bottom:34px}
+
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.trio > div{border-top:3px solid var(--ink);padding-top:14px}
+.trio .n{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--ink-soft);display:block;margin-bottom:8px}
+@media (max-width:760px){.trio{grid-template-columns:1fr;gap:22px}}
+
+.cases{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media (max-width:860px){.cases{grid-template-columns:1fr}}
+.case{background:var(--paper-2);border:1px solid var(--rule);display:flex;flex-direction:column}
+.case .strip{height:5px}
+.case .body{padding:22px 22px 20px}
+.case .tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.case h3{margin:8px 0 12px}
+.case dl{margin:0;font-size:14.5px}
+.case dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:12px}
+.case dd{margin:3px 0 0}
+.case .result{font-family:var(--display);font-size:16px;font-weight:600;line-height:1.35}
+
+.artefacts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media (max-width:860px){.artefacts{grid-template-columns:1fr}}
+.art{background:var(--paper);padding:22px 20px}
+.art .kind{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.art h3{font-size:17px;margin:9px 0 9px}
+.art p{font-size:14px;margin:0;color:var(--ink-soft)}
+.art .yr{font-family:var(--mono);font-size:11px;color:var(--ink-soft);display:block;margin-top:12px}
+
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:22px;font-size:13px;color:var(--ink-soft)}
+.legend i{display:inline-block;width:22px;height:6px;margin-right:8px;vertical-align:middle}
+.grid-markets{display:grid;grid-template-columns:repeat(auto-fill,minmax(122px,1fr));gap:10px}
+.mk{border:1px solid var(--rule);background:var(--paper-2);padding:12px 12px 11px}
+.mk .code{font-family:var(--display);font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.mk .nm{font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+.mk .lvl{height:5px;margin-top:10px}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+@media (max-width:760px){.two-col{grid-template-columns:1fr}}
+ul.clean{list-style:none;padding:0;margin:0}
+ul.clean li{padding:9px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px}
+.chips span{
+  font-family:var(--mono);font-size:11.5px;border:1px solid var(--rule);
+  padding:5px 9px;color:var(--ink-soft);background:var(--paper-2)
+}
+.kit h3{margin-bottom:10px}
+.kit > div{margin-bottom:24px}
+
+.chapter{display:grid;grid-template-columns:200px 1fr;gap:26px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.chapter:first-of-type{border-top:1px solid var(--rule)}
+.chapter .when{font-family:var(--mono);font-size:12px;color:var(--ink-soft);letter-spacing:.06em}
+.chapter h3{margin-bottom:8px}
+@media (max-width:760px){.chapter{grid-template-columns:1fr;gap:8px}}
+
+.filmstrip{border:1px solid var(--rule);background:var(--paper-2);padding:8px;margin:0 0 14px}
+.filmstrip video{width:100%;display:block}
+
+.todo{
+  display:block;border:1px dashed var(--bar-red);color:var(--bar-red);
+  background:transparent;font-family:var(--mono);font-size:11.5px;line-height:1.5;
+  padding:8px 10px;margin:10px 0
+}
+.notice{
+  border-left:4px solid var(--bar-yellow);padding:12px 0 12px 16px;margin:0 0 30px;
+  font-size:13.5px;color:var(--ink-soft);max-width:70ch
+}
+
+footer{padding:56px 0 40px;border-top:1px solid var(--rule)}
+footer .mail{font-family:var(--display);font-size:clamp(24px,4vw,38px);font-weight:800;text-decoration:none;letter-spacing:-.02em}
+footer .mail:hover{color:var(--bar-magenta)}
+.colophon{margin-top:34px;font-family:var(--mono);font-size:11px;color:var(--ink-soft);letter-spacing:.06em}
+</style>
+</head>
+<body>
+
+<div class="bars" aria-hidden="true">
+  <span class="b1"></span><span class="b2"></span><span class="b3"></span>
+  <span class="b4"></span><span class="b5"></span><span class="b6"></span>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Charlotte D'Souza, Berlin</p>
+    <h1>Brand media that moves Top-of-Mind, not just impressions.</h1>
+    <p class="thesis">Ten years planning and running brand campaigns for consumer marketplaces across Europe, the Nordics, CEE and the Middle East. I own the annual plan, the budget, the channel mix and the measurement, and I judge the work by whether the brand-health line moves.</p>
+
+    <div class="meta-row">
+      <span>Brand Media Lead, Delivery Hero</span>
+      <span>foodora &amp; Yemeksepeti</span>
+      <span>20+ markets</span>
+      <span>MBA, Luxury Brand Management</span>
+    </div>
+
+    <div class="links">
+      <a href="mailto:charlotte.dsouza28@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/charlottedsouza1">LinkedIn</a>
+      <a href="Charlotte_Dsouza_CV.pdf">Download CV</a>
+      <a href="#work">Case studies</a>
+    </div>
+
+    <figure class="tracker">
+      <svg viewBox="0 0 560 132" role="img" aria-label="Illustrative brand-tracker line showing a decline followed by recovery to a two-year high.">
+        <line class="ghost" x1="0" y1="112" x2="560" y2="112"></line>
+        <polyline class="line" points="20,44 180,40 340,74 540,28"></polyline>
+        <circle class="dot" cx="540" cy="28" r="5"></circle>
+      </svg>
+      <figcaption>
+        <strong>The shape of the job</strong>
+        A brand-tracker line dips. You work out whether it is media weight, mix, city-level share or the message, then you rebuild it. This is the Norway recovery, indexed. The story is in the case studies below.
+      </figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">How I work</p>
+      <h2>Plan, run, prove.</h2>
+      <p class="lede muted">Most brand roles are strong on one of these. The interesting work happens when the same person carries all three, because the measurement changes the plan.</p>
+    </div>
+    <div class="trio">
+      <div>
+        <span class="n">Plan</span>
+        <h3>Local insight into the annual plan</h3>
+        <p class="small muted">Competitive landscape, category dynamics and cultural nuance per market, then an annual brand plan and budget split that reflects them, rather than a global template pushed down.</p>
+      </div>
+      <div>
+        <span class="n">Run</span>
+        <h3>360 degree execution, ATL and BTL</h3>
+        <p class="small muted">TV, OOH, radio, cinema, OTT and VOD, paid social, influencer and retail media. Briefing creative, steering media and creative agencies, and keeping ten markets on one timeline.</p>
+      </div>
+      <div>
+        <span class="n">Prove</span>
+        <h3>Measurement that changes decisions</h3>
+        <p class="small muted">Media mix modelling, incrementality and correlation analysis, brand tracking, share of voice and social listening, read together and turned into the next quarter's plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Selected work, Delivery Hero</p>
+      <h2>Case studies, short version.</h2>
+    </div>
+
+    <p class="notice">A note on numbers. Everything below describes our own brand's movement and is directional. No competitive tracker data, licensed panel data, media budgets or agency reports are published here. Happy to talk through any of it properly.</p>
+
+    <div class="cases">
+
+      <article class="case">
+        <div class="strip" style="background:var(--bar-magenta)"></div>
+        <div class="body">
+          <span class="tag">Norway, brand health</span>
+          <h3>Rebuilding Top-of-Mind in Oslo</h3>
+          <dl>
+            <dt>Situation</dt>
+            <dd>foodora's Top-of-Mind awareness and customer penetration had dropped in Oslo, the market's most valuable city and the one setting the national number.</dd>
+            <dt>What I did</dt>
+            <dd>Pivoted the offline brand strategy to concentrate weight on Oslo specifically rather than spreading nationally, and rebalanced the channel mix behind it.</dd>
+            <dt>Result</dt>
+            <dd class="result">National Top-of-Mind recovered 7 percentage points to a two-year high, with Oslo up 6 points, while category rivals moved the other way.</dd>
+            <dt>Reading</dt>
+            <dd class="muted">City-level share is a different problem from national share, and averaging the two hides it.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="strip" style="background:var(--bar-red)"></div>
+        <div class="body">
+          <span class="tag">Turkey, campaign</span>
+          <h3>Yemeksepeti's 25th anniversary</h3>
+          <dl>
+            <dt>Situation</dt>
+            <dd>Q2 is structurally soft for recall in the Turkish food category. Two competitors were launching super-apps with heavy, long-format campaigns in the same window, and a major football tournament was competing for the same attention.</dd>
+            <dt>What I did</dt>
+            <dd>Built the anniversary platform and took it nationwide from 20 April: TV as the backbone with a high prime-time weighting, streets turned pink through a mass-reach OOH campaign across Istanbul, Ankara, Izmir and summer destinations, an anniversary sound extended into audio, creator-led social, and lower-third integrations inside live football broadcasts.</dd>
+            <dt>Result</dt>
+            <dd class="result">Top-of-Mind up 3 points, the only food brand in the market to rebuild recall that wave. Category share-of-voice leadership held throughout the quarter despite both competitor launches.</dd>
+            <dt>What I would change</dt>
+            <dd class="muted">Creator-led and UGC formats massively outperformed standard reach buys on view-through and click-through, so the split should have leaned that way from day one. Brand lift study results were muddied by control-group contamination, an inherent problem when a campaign is genuinely everywhere at once.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="strip" style="background:var(--bar-blue)"></div>
+        <div class="body">
+          <span class="tag">EU, go to market</span>
+          <h3>The foodora rebrand rollout</h3>
+          <dl>
+            <dt>Situation</dt>
+            <dd>A full brand relaunch across eight European markets, live May 2023, with different local starting points, media landscapes and levels of existing brand equity.</dd>
+            <dt>What I did</dt>
+            <dd>Set the media objectives and campaign thresholds each market had to hit, ran the top-down budget allocation and the optimisation exercise that followed, briefed the agencies, and held the process from campaign brief through media plan approval to results reporting.</dd>
+            <dt>Result</dt>
+            <dd class="result">Simultaneous relaunch across eight markets on schedule, with seven of eight clearing the global campaign health framework on GRP delivery and net reach.</dd>
+            <dt>What I would change</dt>
+            <dd class="muted">Awareness-first buying pushed response rates below our usual benchmark, which was the trade we accepted. The clearer lesson was on spot length and break timing: shorter spots in high-index months, and shorter gaps between flights, both protect cost KPIs without costing reach.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="strip" style="background:var(--bar-green)"></div>
+        <div class="body">
+          <span class="tag">Hungary, partnerships</span>
+          <h3>Bringing Auchan into quick commerce</h3>
+          <dl>
+            <dt>Situation</dt>
+            <dd>A newly launched grocery partner needed to build awareness fast in a category where the main competitor had a long head start, and the internal fear was that pushing one partner would simply cannibalise the others.</dd>
+            <dt>What I did</dt>
+            <dd>Built a full-funnel activation around the partner, combining in-app and CRM mechanics with an ATL layer: national TV, radio, cinema across 18 theatres, nearly 240 static and digital OOH placements across eight cities, elevator advertising, influencer collaborations and online branding.</dd>
+            <dt>Result</dt>
+            <dd class="result">Partner order growth of 142 percent month on month, overtaking the main competitor five months after launch, with quick-commerce GMV up 18 percent month on month and no cannibalisation of other grocery partners.</dd>
+            <dt>Reading</dt>
+            <dd class="muted">A partner campaign done properly lifts the category, not just the partner. That result is what turned the format into a repeatable one.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="strip" style="background:var(--bar-cyan)"></div>
+        <div class="body">
+          <span class="tag">Global, governance</span>
+          <h3>Making measurement standard, not heroic</h3>
+          <dl>
+            <dt>Situation</dt>
+            <dd>Measurement quality varied by region, so campaign post-mortems were not comparable and learnings did not travel.</dd>
+            <dt>What I did</dt>
+            <dd>Led multi-regional agency pitches across APAC, EU and Turkey, set global TV and OOH thresholds with a quarterly and bi-annual audit cycle, and worked with the data analytics team on the modelling that sat underneath it.</dd>
+            <dt>Result</dt>
+            <dd class="result">A shared measurement and planning language across regions. New markets now start from the framework instead of from scratch.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="strip" style="background:var(--bar-yellow)"></div>
+        <div class="body">
+          <span class="tag">MENA, central brand team</span>
+          <h3>Supporting talabat &amp; HungerStation</h3>
+          <dl>
+            <dt>Situation</dt>
+            <dd>Before moving to the regional foodora and Yemeksepeti team, I sat in Delivery Hero's central brand marketing function supporting the Middle East.</dd>
+            <dt>What I did</dt>
+            <dd>Campaign support, media governance and playbook rollout, working day to day with local marketing teams and their agencies.</dd>
+            <dt>Reading</dt>
+            <dd class="muted">Gulf media landscapes and category behaviour differ enough from Europe that governance has to be portable without being prescriptive.</dd>
+          </dl>
+          <span class="todo">PLACEHOLDER: add one specific campaign or deliverable you are comfortable naming here.</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="artefacts">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Playbooks &amp; analysis</p>
+      <h2>The things that outlast the campaign.</h2>
+      <p class="lede muted">Campaigns end. Frameworks keep working. These are the pieces I built or co-built at Delivery Hero so that the next market, and the next planner, did not have to start from a blank page.</p>
+    </div>
+
+    <div class="artefacts">
+      <div class="art">
+        <span class="kind">Playbook</span>
+        <h3>How to nail affordability on TV</h3>
+        <p>Promotional and value messaging is the hardest thing to do well on TV: too much price and the brand disappears, too little and nobody acts. Sorted the approaches into three creative routes, from pure promo through to dedicated creative, with the effort and payoff of each set out honestly.</p>
+        <span class="yr">Delivery Hero</span>
+      </div>
+      <div class="art">
+        <span class="kind">Playbook</span>
+        <h3>Nailing affordability on brand media 2.0</h3>
+        <p>The follow-up, widened from TV to the whole brand media mix. Central finding: the size of the offer is often not what drives performance. How it is said and shown matters as much, minimal text keeps attention on brand cues, and long-term incentive structures beat one-off discounts on brand connection.</p>
+        <span class="yr">Q1 2024</span>
+      </div>
+      <div class="art">
+        <span class="kind">Playbook</span>
+        <h3>30 inspirational activations</h3>
+        <p>An idea bank of offline and experiential activations for local marketing teams, indexed by budget and by production complexity, so a market with fifteen thousand euros and a market with a real budget can both find something buildable. Each entry carries its honest pros and cons.</p>
+        <span class="yr">September 2022</span>
+      </div>
+      <div class="art">
+        <span class="kind">Analysis, with the data analytics team</span>
+        <h3>TV on and off analysis</h3>
+        <p>What actually happens to a market when TV goes dark. Daily sessions and acquisitions across two and a half years, decomposed into trend, seasonality and noise, then compared across matched before, during and after windows. Used to argue for flight patterns rather than continuous spend.</p>
+        <span class="yr">Europe, 2022</span>
+      </div>
+      <div class="art">
+        <span class="kind">Analysis, with the data analytics team</span>
+        <h3>Offline spend and quick-commerce Top-of-Mind</h3>
+        <p>Correlation study across a full year of monthly data, testing offline brand spend against quick-commerce sessions, acquisitions and trials. Written up with its own limitations stated up front, because a correlation study that hides its shortcomings is worse than no study.</p>
+        <span class="yr">Europe, 2023</span>
+      </div>
+      <div class="art">
+        <span class="kind">Audit &amp; framework</span>
+        <h3>TV audit and brand media measurement</h3>
+        <p>The global audit layer: campaign delivery against GRP and reach thresholds per market, ad-fatigue curves plotting response rate against campaign duration, and media mix model outputs read alongside them. This is where the planning thresholds in the rebrand case study came from.</p>
+        <span class="yr">Delivery Hero</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="markets">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Markets</p>
+      <h2>Where the work has actually run.</h2>
+      <p class="lede muted">Not a list of places I have flown to. Each of these is a market where I have held strategy, budget or execution, colour-coded by depth.</p>
+    </div>
+
+    <div class="legend">
+      <span><i style="background:var(--bar-magenta)"></i>Strategy &amp; budget owned</span>
+      <span><i style="background:var(--bar-blue)"></i>Campaign planning &amp; execution</span>
+      <span><i style="background:var(--bar-cyan)"></i>Support &amp; governance</span>
+    </div>
+
+    <div class="grid-markets">
+      <div class="mk"><div class="code">NO</div><div class="nm">Norway</div><div class="lvl" style="background:var(--bar-magenta)"></div></div>
+      <div class="mk"><div class="code">SE</div><div class="nm">Sweden</div><div class="lvl" style="background:var(--bar-magenta)"></div></div>
+      <div class="mk"><div class="code">FI</div><div class="nm">Finland</div><div class="lvl" style="background:var(--bar-magenta)"></div></div>
+      <div class="mk"><div class="code">DK</div><div class="nm">Denmark</div><div class="lvl" style="background:var(--bar-magenta)"></div></div>
+      <div class="mk"><div class="code">AT</div><div class="nm">Austria</div><div class="lvl" style="background:var(--bar-magenta)"></div></div>
+      <div class="mk"><div class="code">CZ</div><div class="nm">Czechia</div><div class="lvl" style="background:var(--bar-magenta)"></div></div>
+      <div class="mk"><div class="code">HU</div><div class="nm">Hungary</div><div class="lvl" style="background:var(--bar-magenta)"></div></div>
+      <div class="mk"><div class="code">SK</div><div class="nm">Slovakia</div><div class="lvl" style="background:var(--bar-magenta)"></div></div>
+      <div class="mk"><div class="code">TR</div><div class="nm">Turkey</div><div class="lvl" style="background:var(--bar-magenta)"></div></div>
+      <div class="mk"><div class="code">DE</div><div class="nm">Germany</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">UK</div><div class="nm">United Kingdom</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">FR</div><div class="nm">France</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">IT</div><div class="nm">Italy</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">ES</div><div class="nm">Spain</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">NL</div><div class="nm">Netherlands</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">BE</div><div class="nm">Belgium</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">CH</div><div class="nm">Switzerland</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">PL</div><div class="nm">Poland</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">IN</div><div class="nm">India</div><div class="lvl" style="background:var(--bar-blue)"></div></div>
+      <div class="mk"><div class="code">KSA</div><div class="nm">Saudi Arabia</div><div class="lvl" style="background:var(--bar-cyan)"></div></div>
+      <div class="mk"><div class="code">USA</div><div class="nm">United States</div><div class="lvl" style="background:var(--bar-cyan)"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="agency">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">2016 to 2021, DCMN</p>
+      <h2>Five years on the agency side.</h2>
+      <p class="lede muted">Senior International Marketing Manager at DCMN, Berlin, the growth-marketing agency for scaling digital businesses. I owned ATL strategy, budget allocation and operational execution across Germany, the UK, France, Italy, Spain, the Netherlands, Belgium, Switzerland, Austria, Poland and the Nordics, plus selected US activity.</p>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3>Accounts I led</h3>
+        <ul class="clean">
+          <li>Vinted, marketplace. Led the BENELUX launch.</li>
+          <li>Deezer, music streaming</li>
+          <li>Shopify, commerce platform</li>
+          <li>SumUp, fintech</li>
+          <li>Home24, e-commerce</li>
+          <li>Flightright, legal tech</li>
+        </ul>
+        <h3 style="margin-top:26px">Accounts I supported</h3>
+        <ul class="clean">
+          <li>Kayak, travel</li>
+          <li>Omio, travel</li>
+          <li>Jimdo, SaaS</li>
+          <li>Wish, marketplace</li>
+          <li>Smartsteuer, tax software</li>
+          <li>Movinga, relocation</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What the role actually involved</h3>
+        <ul class="clean">
+          <li>Annual and campaign-level ATL strategy per market</li>
+          <li>Budget allocation across TV, radio, OOH, cinema, OTT and VOD, and paid social</li>
+          <li>Direct rate and placement negotiation with local media owners</li>
+          <li>End to end delivery: brief, production, deployment, reporting</li>
+          <li>Performance analysis and optimisation against each client's own KPI, whether that was cost per visit, cost per order or cost per install</li>
+          <li>Adapting mix and creative to each market's landscape, not replicating a template</li>
+          <li>Market entry work, including leading Vinted's launch across the BENELUX region</li>
+        </ul>
+        <h3 style="margin-top:26px">Public artefacts</h3>
+        <ul class="clean">
+          <li><a href="https://www.youtube.com/watch?v=QWNjhzA8yHw">SCALEup webinar: moderating Deezer's Marketing Director DACH on how music streaming marketing adapted through 2020</a></li>
+          <li><a href="https://www.youtube.com/watch?v=GlcIQ8fx3TI&amp;t=101s">SCALE, DCMN's growth-marketing conference. I served on the planning and organising committee. Wrap film here.</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="earlier">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Earlier chapters</p>
+      <h2>Where the instincts came from.</h2>
+    </div>
+
+    <div class="chapter">
+      <div class="when">2014, Bangalore<br>PR Pundit (now Havas Red)</div>
+      <div>
+        <h3>Luxury watch PR</h3>
+        <p class="small">I held the Fossil Group portfolio, covering Fossil, Diesel, Skagen, Michael Kors and Emporio Armani, through the group's expansion in India via the WatchStation retail format. Media planning and press coordination for store launches, every press release written in-house, and Emporio Armani's Baselworld 2014 presence circulated to Indian luxury press to build coverage. Also PR lead on activations: Heineken football events, Kingfisher Fashion Nights and the Derby, Shiseido influencer collaborations, book launches. It is where I learned that earned media and paid media are the same argument told to two different audiences.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="when">2012 to 2014, Bangalore<br>Aon</div>
+      <div>
+        <h3>Market research &amp; competitive intelligence</h3>
+        <p class="small">Company and category research on US retail and hospitality businesses, including Neiman Marcus, Hilton, Best Buy, Target, Macy's and Kohl's, using OneSource, Factiva and Hoovers. SWOT, peer benchmarking, strategy formulation. Unglamorous, and the reason competitive landscape work still comes easily.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="when">2015 to 2016, Paris<br>Jovago, Africa Internet Group</div>
+      <div>
+        <h3>Digital marketing, first job in tech</h3>
+        <p class="small">Online promotions end to end, covering concept, creative briefs and content, with weekly KPI, conversion and bounce-rate reporting in Google Analytics, coordinating across teams in Africa, Myanmar, Bangladesh and Portugal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="toolkit">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Toolkit</p>
+      <h2>What I use, and how.</h2>
+      <p class="lede muted">Grouped by what it is for, because a wall of logos tells you nothing about whether someone can read a model.</p>
+    </div>
+    <div class="two-col kit">
+      <div>
+        <div>
+          <h3>Measurement &amp; brand health</h3>
+          <div class="chips">
+            <span>Media mix modelling</span><span>Incrementality testing</span><span>Correlation analysis</span>
+            <span>Time series decomposition</span><span>Brand &amp; Top-of-Mind tracking</span><span>Share of voice</span>
+            <span>Social listening</span><span>Brand lift studies</span>
+            <span>Looker</span><span>Tableau</span><span>Clarisights</span><span>Google Analytics</span>
+          </div>
+        </div>
+        <div>
+          <h3>Offline &amp; broadcast</h3>
+          <div class="chips">
+            <span>TV planning &amp; tracking</span><span>Radio</span><span>OOH &amp; DOOH</span><span>Cinema</span><span>OTT, VOD, OLV</span><span>Print</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3>Digital &amp; ad platforms</h3>
+          <div class="chips">
+            <span>Google Ads</span><span>DV360</span><span>Meta Ads</span><span>TikTok Ads</span>
+            <span>Snapchat Ads</span><span>Reddit Ads</span><span>Teads</span><span>Spotify</span>
+          </div>
+        </div>
+        <div>
+          <h3>AI in the workflow</h3>
+          <p class="small muted">ChatGPT, Claude, Gemini and Perplexity, with prompt engineering for market research, competitive analysis, strategic briefing and campaign ideation. Mostly used to compress the research phase so there is more time for the judgement part.</p>
+        </div>
+        <div>
+          <h3>Craft</h3>
+          <div class="chips"><span>Photoshop</span><span>Premiere</span><span>InDesign</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="beyond">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Outside the plan</p>
+      <h2>Things I do that aren't the job.</h2>
+    </div>
+    <div class="two-col">
+      <div>
+        <h3>Cake the Collective</h3>
+
+        <figure class="filmstrip" style="margin-top:14px">
+          <video controls muted loop playsinline preload="metadata" poster="media/cake-poster.jpg">
+            <source src="media/cake-picnic.mp4" type="video/mp4">
+            <source src="media/cake-picnic.webm" type="video/webm">
+            Your browser cannot play this video. <a href="media/cake-picnic.mp4">Download it instead.</a>
+          </video>
+        </figure>
+        <span class="todo">PLACEHOLDER: convert the .mov to MP4 and drop it in a /media folder as cake-picnic.mp4, with a still frame as cake-poster.jpg. Instructions are in the README. Delete this note once done, and delete the whole figure block if you would rather not use video.</span>
+
+        <p class="small">A Berlin community project I co-founded and have run for the past year with a friend. Cake-led picnics that get people with shared interests into the same room, or the same patch of grass. Nine picnics so far, starting at 18 cakes and growing to 60, which is a cap we set ourselves purely because two people can only carry so much.</p>
+        <p class="small">Concept, promotion and community building, all of it hands-on. It is, unavoidably, brand building on a budget of zero, and the growth curve has been more satisfying than most of the ones I get paid for.</p>
+        <p class="small"><a href="https://www.instagram.com/cake_thecollective/">@cake_thecollective</a></p>
+
+        <h3 style="margin-top:26px">Pro bono</h3>
+        <p class="small">Set up and ran the Google Ads accounts for Zusammen Leben Willkommen, now <a href="https://solid-base.org/">solid-base.org</a>, a non-profit matching refugees with housing, at no cost, alongside the DCMN years.</p>
+      </div>
+      <div>
+        <h3>The rest of it</h3>
+        <ul class="clean">
+          <li><strong>Karaoke.</strong> Enthusiasm well ahead of ability, and I have made peace with that.</li>
+          <li><strong>Training.</strong> Reformer pilates, barre, strength work, and currently building towards a half marathon.</li>
+          <li><strong>Travel.</strong> Twenty-odd markets on the CV and a permanent list of the ones that are not.</li>
+          <li><strong>Books and cinema.</strong> Both, constantly, and I will happily argue about either.</li>
+          <li><strong>Cooking and baking.</strong> Which, given the section above, you had probably worked out.</li>
+        </ul>
+
+        <h3 style="margin-top:26px">Languages</h3>
+        <p class="small muted">English (fluent), Konkani (native), Hindi (fluent), German (B1), Kannada (working), French (basic)</p>
+
+        <h3 style="margin-top:26px">Education</h3>
+        <p class="small muted">MBA, Luxury Brand Management, INSEEC Paris, 2016<br>BCom Marketing, St. Joseph's College of Commerce, Bangalore, 2012</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <a class="mail" href="mailto:charlotte.dsouza28@gmail.com">charlotte.dsouza28@gmail.com</a>
+    <p class="small muted" style="margin-top:16px;max-width:46ch">Berlin based. Open to conversations about brand and media leadership roles across EMEA.</p>
+    <div class="links" style="margin-top:20px">
+      <a href="https://linkedin.com/in/charlottedsouza1">LinkedIn</a>
+      <a href="Charlotte_Dsouza_CV.pdf">CV (PDF)</a>
+    </div>
+    <p class="colophon">All figures describe our own brand's movement and are directional. No confidential, competitive or licensed panel data is published here.</p>
+  </div>
+  <div class="bars" style="margin-top:36px" aria-hidden="true">
+    <span class="b1"></span><span class="b2"></span><span class="b3"></span>
+    <span class="b4"></span><span class="b5"></span><span class="b6"></span>
+  </div>
+</footer>
+
+</body>
+</html>
