@@ -168,9 +168,14 @@ footer .mail{font-family:var(--display);font-size:clamp(24px,4vw,38px);font-weig
 footer .mail:hover{color:var(--bar-magenta)}
 .colophon{margin-top:34px;font-family:var(--mono);font-size:11px;color:var(--ink-soft);letter-spacing:.06em}
   .art.art-empty {
-      background: var(--bg, #0b0c0e) !important;
-      border: none;
-    }
+  background: var(--bg) !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  position: relative;
+  margin-right: -2px;
+  margin-bottom: -2px;
+  z-index: 2;
+}
 </style>
 </head>
 <body>
